@@ -21,10 +21,7 @@ console.log(paragraph)
 paragraph.innerHTML = paragraph.innerText
   .split(" ")
   .map(word => word.length > 8 ? `<span style="background: #ff0;">${word}</span>` : word)
-  .join(" ")
-// replaces words with certain legnth to different word (or highlights)
-paragraph.innerHTML = paragraph.innerText
-  .split(" ")
   .map(word => word == "of" ? "hi" : word)
   .join(" ")
+// replaces words with certain legnth to different word (or highlights)
 // takes word equal to "of"; ? means if true; "hi" makes them into 'hi' ; :word ends it
